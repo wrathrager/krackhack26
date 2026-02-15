@@ -1,3 +1,9 @@
+// Get ETH balance for any address
+export async function getEthBalance(address) {
+  const provider = new ethers.BrowserProvider(window.ethereum);
+  const bal = await provider.getBalance(address);
+  return ethers.formatEther(bal);
+}
 import { ethers } from "ethers";
 
 export const PAYSTREAM_ADDRESS = "0xc241a3C39abde2d5b071E952af85d64561D17D52";

@@ -1,5 +1,4 @@
 export default function WalletConnect({ setAccount }) {
-
   async function connect() {
     const acc = await window.ethereum.request({
       method: "eth_requestAccounts"
@@ -8,11 +7,8 @@ export default function WalletConnect({ setAccount }) {
   }
 
   return (
-    <div className="card">
-      <h2>PayStream Login</h2>
-      <button className="btn btn-green" onClick={connect}>
-        Connect MetaMask
-      </button>
-    </div>
+    <button className="btn btn-green homepage-connect-btn" onClick={connect}>
+      Connect MetaMask
+    </button>
   );
 }
