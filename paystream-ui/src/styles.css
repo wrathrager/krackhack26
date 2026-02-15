@@ -1,0 +1,34 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn-green { background: #22c55e; }
+.btn-blue { background: #3b82f6; }
+.btn-purple { background: #a855f7; }
+.btn-red { background: #ef4444; }
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin: 5px;
+  width: 260px;
+}
